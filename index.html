@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Новая вкладка</title>
+    <style>
+      body {
+        background: #ffffff;
+        margin: 0;
+      }
+
+      #backgroundImage {
+        border: none;
+        height: 100%;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+      }
+
+      [show-background-image] #backgroundImage {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <input
+      type="button"
+      id="but1"
+      value="HTML"
+      style="background: green; color: white"
+    />
+    <input
+      type="button"
+      id="but2"
+      value="CSS"
+      style="background: rgb(55, 0, 128); color: white"
+    />
+    <!--<script src="./js/hw26.1.js"></script> -->
+  </body>
+  <script src="./Den/8.js"></script>
+</html>
