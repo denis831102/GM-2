@@ -37,20 +37,16 @@
 // }) ;
 
 
- function Car(name, color) {
+ let Car = function(name, color) {
     this.name = name;
     this.color = color;
+}
 
-    this.message1 = function () {
-        console.log(`${this.name} is ${this.color} color`);
-    };
- }
-
-// Car.prototype.message = function () {
-//     console.log(`${this.name} is ${this.color} color`);
-// };
+ Car.prototype.message = function () {
+     console.log(`${this.name} is ${this.color} color`);
+ };
 
  const BMW =  new Car ("bmw", "red");
- const op = new Car ("opel", "white");
+ const opel = new Car ("opel", "white");
 
- Car.message1();
+ opel.message();
